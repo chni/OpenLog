@@ -1702,6 +1702,7 @@ uint8_t append_file(char* file_name)
 
 		if(input_buffer[checked_spot] == setting_escape_character) //Scan for escape character
 		{
+			/*
 			escape_chars_received++;
 			
 			if(escape_chars_received == setting_max_escape_character)
@@ -1711,7 +1712,7 @@ uint8_t append_file(char* file_name)
 				UCSR0B &= ~(1<<RXCIE0); //Clear receive interrupt enable
 				
 				break;
-			}
+			}*/
 		}
 		else
 			escape_chars_received = 0;
